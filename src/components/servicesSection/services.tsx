@@ -4,7 +4,7 @@ import AdditionalServices from "./additionalServices";
 
 const Services = () => {
   return (
-    <div className="  w-[100vw]  h-[215vh]  pb-[40px] bg-[#F9FAFB] ">
+    <div className="  w-full    pb-[40px] bg-[#F9FAFB] ">
       {/* main services */}
       <div>
         <MainServices />

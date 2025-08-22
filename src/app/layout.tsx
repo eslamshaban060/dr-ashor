@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={elMessiri.className}>
+      <body className={`${elMessiri.className} overflow-x-hidden`}>
         <ProviderLayout>{children}</ProviderLayout>{" "}
       </body>
     </html>
