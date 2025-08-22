@@ -1,0 +1,2 @@
+export const WhatsAppLink =
+  "https://api.whatsapp.com/send?phone=%2B201021892229&context=AfdFv7BxDslpOb-VLaGi1uvwFQOV-mpf9k8FMdUfM_CZipbR_bMg0zCS-ZoNMmK1e6HKamdU3w-EaLPr4e6IyhNlpXneyzZ3HOJ2aBjRIvmADDYpmB1OstpM8ZdlQHEIG7nFVCG7gBH-9XOxkFZQ80F80Q&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawLOIidleHRuA2FlbQIxMAABHhTk_7aTEmR8pgEbtcLUQsAq-8p7CGOfvZvFwPKF-RahNZQxrpdOrEDu1qRN_aem_hyfZbPIkpZO0IuOhdUYPfg";

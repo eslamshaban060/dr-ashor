@@ -1,0 +1,1 @@
+export const OPEN_CLOSE_TOOGLE = "OPEN_CLOSE_TOOGLE";
