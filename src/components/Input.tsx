@@ -5,12 +5,12 @@ interface InputProps {
 }
 export default function Input({ name, type, label }: InputProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <label className="pr-2">{label}</label>
       <input
         type={type}
         name={name}
-        className="outline-0 border-[#6c6c6c] border-1 rounded-md h-10 no-spinner w-[100%] focus:border-[#009688] transition-all duration-300"
+        className="bg-[#F8FAFB] px-3 outline-0 border-0  rounded-md h-10 no-spinner w-full  focus:border-0  focus:outline-5 outline-[#c0f6ef] transition-all duration-300"
       />
     </div>
   );
