@@ -1,15 +1,13 @@
-"use server";
-import React from "react";
+// "use server";
 import Header from "@/components/header/Header";
 import Main from "@/components/main/main";
 import Services from "@/components/servicesSection/services";
-// import AppointmentForm from "@/components/main/appointmentForm";
 import Appointment from "@/components/main/appointment";
-// import Footer from "@/components/footer";
+import Testmonials from "@/components/testmonial/testmonials";
 
 const page = () => {
   return (
-    <>
+    <div>
       <header className="fixed z-100 border-b-[0.1px] bg-white border-[#009a8bbe]">
         <Header />
       </header>
@@ -30,12 +28,13 @@ const page = () => {
         <section className="px-13 w-full py-10 bg-[#F8FAFB] flex justify-center">
           <Appointment />
         </section>
-      </div>
 
-      {/* <footer>
-        <Footer />
-      </footer> */}
-    </>
+        {/* testmonials section  */}
+        <section>
+          <Testmonials />
+        </section>
+      </div>
+    </div>
   );
 };
 
