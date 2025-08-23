@@ -278,3 +278,100 @@
 // };
 
 // export default Footer;
+
+
+import { FaPhoneAlt } from 'react-icons/fa';
+import React from "react";
+import Image from "next/image";
+import Logoimage from "../../public/asets/drlogo.jpg";
+import Link from "next/link";
+
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#00635c] text-white py-10 px-6 lg:px-42 lg:pt-22">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center pb-6">
+        <div className="flex flex-col items-center lg:flex-start order-1 lg:order-1">
+          <div className="flex items-center space-x-2 mb-4 w-[70px] sm:w-[80px] h-[70px] sm:h-[80px]">
+             <Image src={Logoimage} alt="Logo icon" />
+
+          </div>
+            <div className="flex flex-col space-y-4 text-right">
+            <div className="flex items-center justify-end space-x-2 border border-[#70e7d7] rounded-full px-4 py-2 hover:bg-white hover:text-gray-900 transition-colors duration-300">
+              <span className="text-lg">0123456789</span>
+              <FaPhoneAlt className="text-xl" />
+            </div>
+          </div>
+    
+        </div>
+
+        <div className="flex flex-col items-center lg:items-end order-2 lg:order-3">
+          <h3 className="text-lg font-semibold mb-4 text-right">الصفحات</h3>
+          <ul className="text-right space-y-2">
+           
+            <li>
+              <Link href="/" className="hover:text-[#00bfa5]  transition-colors duration-200">
+                الرئيسية
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="hover:text-[#00bfa5] transition-colors duration-200">
+                المدونة
+              </Link>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div className="flex flex-col items-center lg:items-end order-3 lg:order-4">
+          <h3 className="text-lg font-semibold mb-4 text-right">الخدمات</h3>
+          <ul className="text-right space-y-2">
+            <li>
+              <Link href="#" className="hover:text-[#00bfa5] transition-colors duration-200">
+                تجميل
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-[#00bfa5] transition-colors duration-200">
+                التقويم
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-[#00bfa5] transition-colors duration-200">
+                الزراعة
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="hover:text-[#00bfa5] transition-colors duration-200">
+                الحشوات
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      
+    <div className="flex flex-col pt-8 lg:flex-row items-center lg:items-baseline lg:flex-center justify-evenly order-4 lg:order-1 border-t border-gray-300">
+        
+          <div className="text-center">
+            <p className="text-sm">
+              جميع المرضى يستحقون أفضل مستوى رعاية
+            </p>
+        </div>
+       
+      <div className="flex justify-center mt-4 lg:mt-0">
+        <a
+          href="#"
+          className="bg-[#70e7d7] text-[#00635c] px-6 py-3 rounded-full font-bold text-lg hover:bg-[#fff] transition-colors duration-300"
+        >
+          طلب موعد الان
+        </a>
+      </div>
+       
+      
+         </div>
+
+    </footer>
+  );
+}
+

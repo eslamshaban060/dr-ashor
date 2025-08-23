@@ -4,6 +4,7 @@ import Main from "@/components/main/main";
 import Services from "@/components/servicesSection/services";
 import Appointment from "@/components/main/appointment";
 import Testmonials from "@/components/testmonial/testmonials";
+import Footer from "../components/footer";
 
 const page = () => {
   return (
@@ -34,6 +35,7 @@ const page = () => {
           <Testmonials />
         </section>
       </div>
+       <Footer />
     </div>
   );
 };
