@@ -2,7 +2,7 @@
 import Header from "@/components/header/Header";
 import Main from "@/components/main/main";
 import Services from "@/components/servicesSection/services";
-import Appointment from "@/components/main/appointment";
+import Appointment from "@/components/appointment/appointment";
 import Testmonials from "@/components/testmonial/testmonials";
 import Footer from "../components/footer";
 
@@ -35,7 +35,7 @@ const page = () => {
           <Testmonials />
         </section>
       </div>
-       <Footer />
+      <Footer />
     </div>
   );
 };
