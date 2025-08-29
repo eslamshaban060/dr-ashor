@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Logoimage from "../../public/asets/drlogo.jpg";
 import Link from "next/link";
-import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaFacebook } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaFacebook ,FaFacebookMessenger} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -19,14 +19,7 @@ export default function Footer() {
               والعلاج.{" "}
             </p>
           </div>
-          <div className="flex justify-center mt-4">
-            <Link
-              href="#"
-              className="bg-[#70e7d7] text-[#00635c] px-6 py-3 rounded-full font-bold text-lg hover:bg-[#fff] transition-colors duration-300"
-            >
-              طلب موعد الان
-            </Link>
-          </div>
+          
         </div>
 
         <div className="flex flex-col items-center order-2 lg:order-3">
@@ -136,6 +129,20 @@ export default function Footer() {
             >
               <FaFacebook />
             </Link>
+            <Link
+        href="https://m.me/username" 
+        target="_blank"
+        className="text-white hover:text-[#00bfa5] transition-colors duration-200 text-2xl"
+      >
+        <FaFacebookMessenger />
+      </Link>
+       <Link
+        href="https://wa.me/201234567890" 
+        target="_blank"
+        className="text-white hover:text-[#00bfa5] transition-colors duration-200 text-2xl"
+      >
+        <FaWhatsapp />
+      </Link>
           </div>
         </div>
       </div>
