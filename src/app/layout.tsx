@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { El_Messiri, Markazi_Text } from "next/font/google";
 import "./globals.css";
 import { ProviderLayout } from "@/redux.tsx/provider";
+import Header from "@/components/header/Header";
+import Footer from "../components/footer";
+
 
 const elMessiri = El_Messiri({
   subsets: ["arabic", "latin"],
@@ -46,7 +49,15 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body className={`${elMessiri.className} overflow-x-hidden`}>
-        <ProviderLayout>{children}</ProviderLayout>{" "}
+      
+        <ProviderLayout>
+           <header className="fixed z-100 border-b-[0.1px] bg-white border-[#009a8bbe]">
+        <Header />
+      </header>
+          {children}
+          </ProviderLayout>{" "}
+            <Footer/>
+
       </body>
     </html>
   );

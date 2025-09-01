@@ -1,4 +1,6 @@
-import AppointmentForm from "./appointmentForm";
+
+import AppointmentForm from "../appointment/appointmentForm";
+
 import drAshorImg from "@/../public/asets/appointment.png";
 export default function Appointment() {
   return (

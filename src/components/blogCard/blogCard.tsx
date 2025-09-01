@@ -40,7 +40,7 @@ type BlogCardProps = {
 const BlogCard = ({ article }: BlogCardProps) => {
   return (
     <Link href={`/blog/${article.id}`}>
-      <div className="bg-white px-5 rounded-2xl shadow-md overflow-hidden border-[2px] border-white  hover:border-[var(--color-primary)] hover:shadow-xl transition-all duration-500 group">
+      <div className="bg-white px-5 rounded-2xl shadow-md overflow-hidden border-[2px] border-white  hover:border-[var(--color-primary)] hover:shadow-xl transition-all duration-500 group mb-6">
         <div className="relative w-full h-48 overflow-hidden">
           <Image
             src={article.image}

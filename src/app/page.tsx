@@ -9,9 +9,7 @@ import Footer from "../components/footer";
 const page = () => {
   return (
     <div>
-      <header className="fixed z-100 border-b-[0.1px] bg-white border-[#009a8bbe]">
-        <Header />
-      </header>
+     
 
       {/* space */}
       <div className="w-[100vw] h-[130px] "></div>
@@ -35,7 +33,7 @@ const page = () => {
           <Testmonials />
         </section>
       </div>
-      <Footer />
+
     </div>
   );
 };
