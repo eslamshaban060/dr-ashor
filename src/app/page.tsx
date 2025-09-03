@@ -5,6 +5,8 @@ import Services from "@/components/servicesSection/services";
 import Appointment from "@/components/main/appointment";
 import Testmonials from "@/components/testmonial/testmonials";
 import Footer from "../components/footer";
+import BlogSection from "@/components/blogSection/blogSection";
+import { articles } from "./blog/page";
 
 const page = () => {
   return (
@@ -34,8 +36,13 @@ const page = () => {
         <section>
           <Testmonials />
         </section>
+
+        {/* blogs section  */}
+        <section>
+          <BlogSection articles={articles} />
+        </section>
       </div>
-       <Footer />
+      <Footer />
     </div>
   );
 };
